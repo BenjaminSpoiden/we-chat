@@ -9,3 +9,5 @@ const DashboardPage: React.FC<DashboardPageProps> = () => {
         </div>
     )
 }
+
+export default DashboardPage
