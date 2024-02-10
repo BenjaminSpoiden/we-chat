@@ -33,7 +33,7 @@ export default async function Layout({ children }: Readonly<{ children: React.Re
   }
 
   const unseenRequestCount = (await fetchRedis<User[]>('smembers', `user:${session.user.id}:incoming_friend_requests`)).length
-  console.log('test', unseenRequestCount)
+
   return (
     <div className="w-full flex h-screen">
       <div className="hidden md:flex h-full w-full max-w-xs grow flex-col gap-y-5 overflow-y-auto border-r border-slate-200 bg-white px-4">
